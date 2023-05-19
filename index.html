@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/images/Cabeca.ico" type="image/x-icon">
+    <script src="js/canvas.js" defer></script>
+    <script src="js/scrambler.js" defer></script>
+    <script src="js/movimentos.js" defer></script>
+    <script src="/js/cronometro.js" defer></script>
+    <script src="/js/teste.js" defer></script>
+
+    <title>ScramblerCube</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="imagem" src="/images/Cabeca.jpg" alt="cabeça na forma do Cubo Ma´gico">
+        <h1>Magic Cube Scrambler</h1>
+    </header>
+
+    <main class="container-main">
+        <section class="scrambler">
+            <h2 id="scrambler"> Scramble...</h2>
+        </section>
+
+        <section class="container">
+
+    
+            <div class="timer">
+    
+                <div class="time" id="minutes">00</div>
+                <div class="separator">:</div>
+    
+                <div class="time" id="seconds">00</div>
+                <div class="separator">:</div>
+    
+                <div class="time" id="milliseconds">000</div>
+                <div class="separator"></div>
+    
+            </div>
+    
+        </section>
+
+        <section class="tela">
+            <canvas id="tela-principal" width="400" height="320"></canvas>
+
+        </section>
+
+        <!-- <button id="btn-scrambler">Novo Scramble</button> -->
+
+    </main>
+
+    
+    
+    <footer class="social">
+
+        
+            <div class="ancoras">
+                <a href="https://github.com/RCaligaC" target="_blank"><img class="imagem" src="./images/icons8-github-96.png" alt="Meu github"></a>
+
+                <p>&#169; By RCaligaC - 2023</p>
+
+                <a href="https://www.linkedin.com/in/caliga/" target="_blank"><img class="imagem" src="./images/icons8-linkedin-96.png" alt="Meu github"></a>
+
+            </div>
+        
+    </footer>
+    
+</body>
+</html>
