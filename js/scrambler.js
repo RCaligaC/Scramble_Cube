@@ -131,5 +131,4 @@ function scrambler () {
     
         })
 
-        /* setTimeout(() => {movimentoF1()}, 1000); */
 }
