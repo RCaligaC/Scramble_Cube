@@ -22,12 +22,13 @@ body {
 }
 
 h1 {
+    margin-left: 50px;
     color: #175cff;
     text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
     font-size: 3rem;
 }
 
-.imagem {
+.cabecalho .imagem {
     width: 100px;
     height: 100px;
     margin-left: 50px;
