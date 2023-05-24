@@ -104,18 +104,13 @@ document.addEventListener('keyup', function(e) {
             startTimer();
             isPaused = false;
             contagem += 1;
-            console.log("clicou, rodou!")
-            
             
         } else {
 
                 pauseTimer();
                 contagem += 1;
                 isPaused = true;
-                console.log("clicou, parou!")
 
     }
-
-    console.log(contagem);
 
   });

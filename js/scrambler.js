@@ -1,4 +1,3 @@
-/* import cuboResolvido from './canvas.js'; */
 
 //Gerador de embaralhamento para o Cubo Mágico
 
@@ -47,15 +46,15 @@ function scrambler () {
 
     for (let i = 1; i <= (num.length - 2); i++) {
 
-        while (num[mov1] === 1 && num[mov2] === 2 && num[mov3] === 1 ||
-            num[mov1] === 2 && num[mov2] === 1 && num[mov3] === 2 ||
-            num[mov1] === 3 && num[mov2] === 4 && num[mov3] === 3 ||
-            num[mov1] === 4 && num[mov2] === 3 && num[mov3] === 4 ||
-            num[mov1] === 5 && num[mov2] === 6 && num[mov3] === 5 ||
-            num[mov1] === 6 && num[mov2] === 5 && num[mov3] === 6 ||
-            num[mov3] === num[mov2]){
+        while ( num[mov1] === 1 && num[mov2] === 2 && num[mov3] === 1 ||
+                num[mov1] === 2 && num[mov2] === 1 && num[mov3] === 2 ||
+                num[mov1] === 3 && num[mov2] === 4 && num[mov3] === 3 ||
+                num[mov1] === 4 && num[mov2] === 3 && num[mov3] === 4 ||
+                num[mov1] === 5 && num[mov2] === 6 && num[mov3] === 5 ||
+                num[mov1] === 6 && num[mov2] === 5 && num[mov3] === 6 ||
+                num[mov3] === num[mov2] ){
 
-            num[mov3] = Math.floor(Math.random() * (1 , 6) + 1);
+                    num[mov3] = Math.floor(Math.random() * (1 , 6) + 1);
         }
         mov1 += 1;
         mov2 += 1;
@@ -129,6 +128,17 @@ function scrambler () {
                 
         else if (element == 'D2') {movimentoD2()} 
     
-        })
+    })
+
+ /*        scramble.forEach((element) => {
+
+            const rodaMovimento = {
+
+                "R": element
+            }
+
+            console.log(rodaMovimento[movimentoR()])
+        
+            }) */
 
 }
