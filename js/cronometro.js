@@ -74,43 +74,50 @@ function formatMilliseconds(time) {
 
 
 
-let contagem = 0;
 
-document.addEventListener("keydown", function(e) {
 
-    if (e.key === "Enter") {
-        
-        contagem = 0;
-        resetTimer();
-        scrambler();
-    }
-})
+function cronometro() {
 
-document.addEventListener('keyup', function(e) {
+    let contagem = 0;
+
+    document.addEventListener("keydown", function(e) {
+
+        if (e.key === "Enter") {
+            
+            contagem = 0;
+            resetTimer();
+            scrambler();
+        }
+    })
+
+    document.addEventListener('keyup', function(e) {
 
  
-    let codigoTecla = e.which || e.keyCode || 0;
-    let space = codigoTecla == 32;
-
-    if (contagem === 2) {
-        
-        resetTimer();
-        scrambler();
-        isPaused = true;
-        contagem = 0;
-
-        } else if (space && isPaused === true) {
-
-            startTimer();
-            isPaused = false;
-            contagem += 1;
+        let codigoTecla = e.which || e.keyCode || 0;
+        let space = codigoTecla == 32;
+    
+        if (contagem === 2) {
             
-        } else {
-
-                pauseTimer();
+            resetTimer();
+            scrambler();
+            isPaused = true;
+            contagem = 0;
+    
+            } else if (space && isPaused === true) {
+    
+                startTimer();
+                isPaused = false;
                 contagem += 1;
-                isPaused = true;
+                
+            } else {
+    
+                    pauseTimer();
+                    contagem += 1;
+                    isPaused = true;
+    
+        }
+    
+      });
+}
 
-    }
-
-  });
+cronometro();
