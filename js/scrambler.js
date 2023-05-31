@@ -91,54 +91,24 @@ function scrambler () {
 
     scramble.forEach((element) => {
         
-        
-        if (element == 'R') {movimentoR()} 
-
-        else if (element == "R'") {movimentoR1()} 
-    
-        else if (element == 'R2') {movimentoR2()} 
-    
-        else if (element == 'L') {movimentoL()} 
-    
-        else if (element == "L'") {movimentoL1()} 
-    
-        else if (element == 'L2') {movimentoL2()} 
-    
-        else if (element == 'F') {movimentoF()} 
-    
-        else if (element == "F'") {movimentoF1()} 
-    
-        else if (element == 'F2') {movimentoF2()} 
-    
-        else if (element == 'B') {movimentoB()} 
-                
-        else if (element == "B'") {movimentoB1()} 
-                
-        else if (element == 'B2') {movimentoB2()} 
-                
-        else if (element == 'U') {movimentoU()} 
-                
-        else if (element == "U'") {movimentoU1()} 
-                
-        else if (element == 'U2') {movimentoU2()} 
-                
-        else if (element == 'D') {movimentoD()} 
-                
-        else if (element == "D'") {movimentoD1()} 
-                
-        else if (element == 'D2') {movimentoD2()} 
-    
+        if (element == 'R') movimentoR();
+        else if (element == "R'") movimentoR1();
+        else if (element == 'R2') movimentoR2();
+        else if (element == 'L') movimentoL();
+        else if (element == "L'") movimentoL1();
+        else if (element == 'L2') movimentoL2();
+        else if (element == 'F') movimentoF();
+        else if (element == "F'") movimentoF1();
+        else if (element == 'F2') movimentoF2();
+        else if (element == 'B') movimentoB();
+        else if (element == "B'") movimentoB1(); 
+        else if (element == 'B2') movimentoB2();
+        else if (element == 'U') movimentoU(); 
+        else if (element == "U'") movimentoU1();         
+        else if (element == 'U2') movimentoU2(); 
+        else if (element == 'D') movimentoD(); 
+        else if (element == "D'") movimentoD1();
+        else if (element == 'D2') movimentoD2(); 
+      
     })
-
- /*        scramble.forEach((element) => {
-
-            const rodaMovimento = {
-
-                "R": element
-            }
-
-            console.log(rodaMovimento[movimentoR()])
-        
-            }) */
-
 }

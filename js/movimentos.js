@@ -836,6 +836,71 @@ function movimentoD2() {
     movimentoD();
 }
 
+// inicio testes
+
+let movimentoX = function () {
+    // quinas
+    aux1 = ladoL[0][0];
+    aux2 = ladoU[0][2];
+    aux3 = ladoR[2][2];
+    aux4 = ladoD[2][0];
+
+    ladoL[0][0] = aux2;
+    ladoU[0][2] = aux3;
+    ladoR[2][2] = aux4;
+    ladoD[2][0] = aux1;
+
+    aux1 = ladoL[2][0];
+    aux2 = ladoU[0][0];
+    aux3 = ladoR[0][2];
+    aux4 = ladoD[2][2];
+
+    ladoL[2][0] = aux2;
+    ladoU[0][0] = aux3;
+    ladoR[0][2] = aux4;
+    ladoD[2][2] = aux1;
+
+    aux1 = ladoB[0][0];
+    aux2 = ladoB[0][2];
+    aux3 = ladoB[2][2];
+    aux4 = ladoB[2][0];
+
+    ladoB[0][0] = aux4;
+    ladoB[0][2] = aux1;
+    ladoB[2][2] = aux2;
+    ladoB[2][0] = aux3;
+
+    // meios    
+    aux1 = ladoB[0][1];
+    aux2 = ladoB[1][2];
+    aux3 = ladoB[2][1];
+    aux4 = ladoB[1][0];
+    
+    ladoB[0][1] = aux4;
+    ladoB[1][2] = aux1;
+    ladoB[2][1] = aux2;
+    ladoB[1][0] = aux3;
+
+    aux1 = ladoL[1][0];
+    aux2 = ladoU[0][1];
+    aux3 = ladoR[1][2];
+    aux4 = ladoD[2][1];
+
+    ladoL[1][0] = aux2;
+    ladoU[0][1] = aux3;
+    ladoR[1][2] = aux4;
+    ladoD[2][1] = aux1;
+
+    minhaFace(ladoL, 25, 120, 50, 145, 75, 170, 25, 25);
+    minhaFace(ladoF, 107, 120, 132, 145, 157, 170, 25, 25);
+    minhaFace(ladoR, 189, 120, 214, 145, 239, 170, 25, 25);
+    minhaFace(ladoB, 271, 120, 296, 145, 321, 170, 25, 25);
+    minhaFace(ladoU, 107, 38, 132, 63, 157, 88, 25, 25);
+    minhaFace(ladoD, 107, 202, 132, 227, 157, 252, 25, 25);
+    
+}
+
+// fim testes
 
 /* cuboResolvido(); */ 
 

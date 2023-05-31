@@ -57,7 +57,7 @@ function resetTimer() {
 
     minutesEl.textContent = "00";
     secondsEl.textContent = "00";
-    millisecondsEl.textContent = "00";
+    millisecondsEl.textContent = "000";
 
     isPaused = false;
 }
@@ -69,7 +69,7 @@ function formatTime(time) {
 
 function formatMilliseconds(time) {
 
-    return time < 9.99 ? `0${time}`.padStart(3, "0") : time;
+    return time < 100 ? `0${time}`.padStart(3, "0") : time;
 }
 
 
