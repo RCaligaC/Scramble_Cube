@@ -1,0 +1,30 @@
+/* Estilização dos botões */
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    margin-top: 5rem;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+#startBtn {
+    background-color: #175cff;
+    color: #fff;
+}
+
+#pauseBtn, #resumeBtn {
+    display: none;
+}

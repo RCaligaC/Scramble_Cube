@@ -8,7 +8,6 @@
 }
 
 body {
-    max-width: auto;
     background: rgb(204,204,204);
     background: radial-gradient(circle, rgba(204,204,204,1) 0%, rgba(59,59,59,1) 100%);
     background: rgb(44,57,78);
@@ -16,60 +15,56 @@ body {
 }
 .cabecalho {
     background: #023e8a;
-    display: flex;
-    align-items: center;
-    text-align: center;
     box-shadow: 0 0 1.2em blue, 0 0 1.2em white;
 }
 
-h1 {
+.cabecalho__logo__titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.cabecalho__titulo {
     margin-left: 50px;
     color: #175cff;
     text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
     font-size: 2rem;
 }
 
-.cabecalho .imagem {
+.cabecalho__logo {
     width: 70px;
-    height: 70px;
     margin-left: 50px;
     padding: 5px;
     border-radius: 50%;
 }
 
 .scrambler {
-    margin-top: 50px;
-    /* margin-bottom: 50px; */
+    margin-top: 5rem;
     text-align: center;
-}
-
-#scrambler {
     color: #f1f1f1;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
-.tela {
-    text-align: center;
-    padding: 10px;
-}
-
-/* Cronômetro */
-.container {
+.main__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
 }
 
-.container h1 {
-    color: #175cff;
+.container__caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .timer {
-    margin-top: 15px;
+    margin-top: 4rem;
     display: flex;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: bold;
     color: #333;
 }
@@ -80,7 +75,6 @@ h1 {
     justify-content: center;
     margin-right: 10px;
     color: #f4d35e;
-    min-width: 90px;
     font-family: digital Numbers;
 }
 
@@ -90,52 +84,48 @@ h1 {
 }
 
 #milliseconds {
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #ee964b;
+}
+
+.tela {
+    margin-top: 3rem;
+    
 }
 
 /* footer */
 
-.social{
+.social {
+    padding-left: 2rem;
     position: absolute;
-    bottom: 0;
-    color: #FFF;
-    width: 100%;   
-    text-align: center;
-}
-
-.social .ancoras {
+    bottom: 2rem;
+    width: 100%;
+    align-items: start;
     display: flex;
-    /* height: 120px; */
-    margin-bottom: 0;
+    flex-direction: column;
 }
 
-.social .ancoras p {
-    color: #fff;
-    height: bold;
-    margin-left: 5px;
+.social__paragrafo {
+    color: white;
 }
 
-.social .ancoras .imagem {
-    width: 35px;
-    height: 35px;
-}
+@media screen and (max-width: 425px) {
 
-@media screen and (max-width: 450px) {
-
-    .cabecalho {
-        width: auto;
+    .container__caixa {
+        max-width: 420px;
     }
 
-    .container {
-        width: auto;
+    .scrambler {
+        font-size: 1.8rem;
     }
 
-    .tela {
-        width: auto;
+    .timer {
+        max-width: 420px;
+        font-size: 2.75rem
     }
 
-    .social {
-        width: auto;
+    #milliseconds {
+        font-size: 2.5rem;
     }
+
 }

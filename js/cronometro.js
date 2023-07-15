@@ -1,8 +1,17 @@
 // selecionando os elementos noo DOM
 
-const minutesEl = document.querySelector("#minutes");
-const secondsEl = document.querySelector("#seconds");
-const millisecondsEl = document.querySelector("#milliseconds");
+const minutesEle = document.querySelector("#minutes");
+const secondsEle = document.querySelector("#seconds");
+const millisecondsEle = document.querySelector("#milliseconds");
+
+/* const botao = document.querySelector("[data-botao]"); */
+
+/* botao.addEventListener("click", botaoClick);
+
+function botaoClick() {
+
+    startTimer();
+} */
 
 
 let interval;
@@ -29,9 +38,9 @@ function startTimer() {
                 seconds = 0;
             }
 
-            minutesEl.textContent = formatTime(minutes);
-            secondsEl.textContent = formatTime(seconds);
-            millisecondsEl.textContent = formatMilliseconds(milliseconds)
+            minutesEle.textContent = formatTime(minutes);
+            secondsEle.textContent = formatTime(seconds);
+            millisecondsEle.textContent = formatMilliseconds(milliseconds)
             
         }
     }, 10)
@@ -55,9 +64,9 @@ function resetTimer() {
     seconds = 0;
     milliseconds = 0;
 
-    minutesEl.textContent = "00";
-    secondsEl.textContent = "00";
-    millisecondsEl.textContent = "000";
+    minutesEle.textContent = "00";
+    secondsEle.textContent = "00";
+    millisecondsEle.textContent = "000";
 
     isPaused = false;
 }
@@ -73,14 +82,16 @@ function formatMilliseconds(time) {
 }
 
 
-
-
-
 function cronometro() {
 
     let contagem = 0;
 
     document.addEventListener("keydown", function(e) {
+
+        startBtn.style.display = "none";
+        pauseBtn.style.display = "none";
+        resumeBtn.style.display = "none";
+        resetBtn.style.display = "none";
 
         if (e.key === "Enter") {
             
@@ -88,11 +99,20 @@ function cronometro() {
             resetTimer();
             scrambler();
         }
+
+        startBtn.style.display = "none";
+        pauseBtn.style.display = "none";
+        resumeBtn.style.display = "none";
+        resetBtn.style.display = "none";
     })
 
     document.addEventListener('keyup', function(e) {
 
- 
+        startBtn.style.display = "none";
+        pauseBtn.style.display = "none";
+        resumeBtn.style.display = "none";
+        resetBtn.style.display = "none";
+
         let codigoTecla = e.which || e.keyCode || 0;
         let space = codigoTecla == 32;
     
@@ -116,7 +136,12 @@ function cronometro() {
                     isPaused = true;
     
         }
-    
+
+        startBtn.style.display = "none";
+        pauseBtn.style.display = "none";
+        resumeBtn.style.display = "none";
+        resetBtn.style.display = "none";
+
       });
 }
 

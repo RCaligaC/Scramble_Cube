@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles-botoes.css">
     <link rel="icon" href="./images/Cabeca.ico">
+
     <title>ScramblerCube</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="imagem" src="./images/Cabeca.jpg" alt="Cabeça em forma de um cubo"></a>
-        <h1>Caliga's Magic Cube</h1>
+    <header class="cabecalho" id="cabecalho">
+        <div class="cabecalho__logo__titulo">
+
+            <img class="cabecalho__logo" src="./images/Cabeca.jpg" alt="Cabeça em forma de um cubo"></a>
+            <h1 class="cabecalho__titulo">Caliga's Magic Cube</h1>
+
+        </div>
+        
     </header>
 
-    <main class="container-main">
-        <section class="scrambler">
-            <h2 id="scrambler"> Scramble...</h2>
-        </section>
+    <main class="main__container">
+        
+        <section class="container__caixa">
 
-        <section class="container">
-
+            <h2 class="scrambler" id="scrambler"> Scramble...</h2>
     
             <div class="timer">
     
@@ -34,29 +39,31 @@
                 <div class="separator"></div>
     
             </div>
+
+            <div class="buttons">
+
+            <button class="btn" id="startBtn">Iniciar</button>
+            <button class="btn" id="pauseBtn">Pausar</button>
+            <button class="btn" id="resumeBtn">Continuar</button>
+            <button class="btn" id="resetBtn">Resetar</button>
+    
+            </div>
     
         </section>
 
-        <section class="tela">
-            <canvas id="tela-principal" width="400" height="320"></canvas>
-
-        </section>
+        <canvas class="tela" id="tela-principal" width="400" height="320"></canvas>
 
     </main>
 
     
     
     <footer class="social">
-
         
-            <div class="ancoras">
-                <a href="https://github.com/RCaligaC" target="_blank"><img class="imagem" src="./images/icons8-github-96.png" alt="Meu github"></a>
+            <!-- <a href="https://github.com/RCaligaC" target="_blank"><img class="imagem" src="./images/icons8-github-96.png" alt="Meu github"></a> -->
 
-                <p>&#169; By RCaligaC - 2023</p>
+            <p class="social__paragrafo">&#169; By RCaligaC - 2023</p>
 
-                <a href="https://www.linkedin.com/in/caliga/" target="_blank"><img class="imagem" src="./images/icons8-linkedin-96.png" alt="Meu github"></a>
-
-            </div>
+            <!-- <a href="https://www.linkedin.com/in/caliga/" target="_blank"><img class="imagem" src="./images/icons8-linkedin-96.png" alt="Meu github"></a> -->
         
     </footer>
     
@@ -64,6 +71,7 @@
     <script src="./js/scrambler.js"></script>
     <script src="./js/movimentos.js"></script>
     <script src="./js/cronometro.js"></script>
+    <script src="./js/cronometroBotoes.js"></script>
 
 </body>
 </html>
