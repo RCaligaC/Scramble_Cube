@@ -125,12 +125,14 @@ body {
     }
 
     .container__caixa {
+        margin-top: 2rem;
         max-width: 420px;
     }
 
     .scrambler {
         font-size: 1.2rem;
         margin-top: 1rem;
+        width: 300px;
     }
 
     .timer {
