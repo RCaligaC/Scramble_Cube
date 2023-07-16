@@ -1,9 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/digital-numbers');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Orbitron", sans-serif;
 }
 
@@ -13,17 +10,15 @@ body {
     background: rgb(44,57,78);
     background: radial-gradient(circle, rgba(44,57,78,1) 0%, rgba(0,15,31,1) 100%);
 }
-.cabecalho {
-    background: #023e8a;
-    box-shadow: 0 0 1.2em blue, 0 0 1.2em white;
-}
 
 .cabecalho{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 1rem;
+    background: #023e8a;
+    /* box-shadow: 0 0 1.2em blue, 0 0 1.2em white; */
+    padding: .5rem;
 }
 
 .cabecalho__titulo {
