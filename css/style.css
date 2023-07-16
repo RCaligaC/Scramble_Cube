@@ -42,6 +42,7 @@ body {
 
 .scrambler {
     margin-top: 5rem;
+    max-width: 86rem;
     text-align: center;
     color: #f1f1f1;
     font-size: 3rem;
@@ -108,6 +109,8 @@ body {
     color: white;
 }
 
+/* mobile */
+
 @media screen and (max-width: 425px) {
 
     .cabecalho {
@@ -144,3 +147,38 @@ body {
     }
 
 }
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+    .cabecalho {
+        width: auto;
+    }
+
+    .scrambler {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        width: 45rem;
+    }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+    .cabecalho {
+        width: auto;
+    }
+
+    .scrambler {
+        margin-top: 2.5rem;
+        font-size: 2.3rem;
+        width: 73rem;
+    }
+
+}
+
+
+/* --- fim ;) */
