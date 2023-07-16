@@ -18,7 +18,7 @@ body {
     box-shadow: 0 0 1.2em blue, 0 0 1.2em white;
 }
 
-.cabecalho__logo__titulo {
+.cabecalho{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,7 +110,7 @@ body {
 
 @media screen and (max-width: 425px) {
 
-    .cabecalho__logo__titulo {
+    .cabecalho {
         padding: 0;
     }
 
