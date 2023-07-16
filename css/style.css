@@ -17,7 +17,7 @@ body {
     align-items: center;
     justify-content: space-around;
     background: #023e8a;
-    /* box-shadow: 0 0 1.2em blue, 0 0 1.2em white; */
+    box-shadow: 0 0 1.2em blue, 0 0 1.2em white;
     padding: .5rem;
 }
 
@@ -25,7 +25,7 @@ body {
     margin-left: 50px;
     color: #175cff;
     text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .cabecalho__logo {
