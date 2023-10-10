@@ -38,7 +38,7 @@ header {
 .cabecalho__titulo {
   color: #175cff;
   text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .cabecalho__logo {
@@ -119,7 +119,7 @@ header {
 
 @media screen and (min-width: 425px) {
   .cabecalho__titulo {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .container__caixa {
